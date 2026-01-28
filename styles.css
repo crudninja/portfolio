@@ -141,9 +141,10 @@ body {
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 2rem;
+    padding-top: 8rem;
     background: 
         linear-gradient(45deg, transparent 48%, var(--primary-green) 49%, var(--primary-green) 51%, transparent 52%),
         linear-gradient(-45deg, transparent 48%, var(--primary-green) 49%, var(--primary-green) 51%, transparent 52%);
