@@ -41,8 +41,9 @@ a.underline { text-decoration: underline; }
 .resume {
   position: relative;
   width: 210mm;
-  height: 297mm;
-  overflow: hidden;
+  min-height: 297mm;
+  height: auto;
+  overflow: visible;
 }
 
 .bg {
@@ -317,5 +318,22 @@ a.underline { text-decoration: underline; }
 @media print {
   html, body {
     background: #fff;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume {
+    overflow: hidden;
+  }
+
+  .bg {
+    display: none !important;
+  }
+
+  .sidebar::before {
+    display: none !important;
   }
 }
